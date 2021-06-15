@@ -19,9 +19,11 @@
 #手机狂欢城
 0 0,12,18,21 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1
 #618动物联萌
-33 0,6-23/2 * * * node /scripts/jd_zoo.js >> /scripts/logs/jd_zoo.log 2>&1
+36 0,6-23/2 * * * node /scripts/jd_zoo_star261.js >> /scripts/logs/jd_zoo.log 2>&1
 #618动物联萌专门收集金币(每小时的第30分运行一次)
-0-59/30 * * * * node /scripts/jd_zooCollect.js >> /scripts/logs/jd_zooCollect.log 2>&1
+0-59/30 * * * * node /scripts/jd_zooCollect_star261.js >> /scripts/logs/jd_zooCollect.log 2>&1
+#618动物联萌，只做图鉴里的店铺任务
+10 9 * * * node /scripts/jd_zooShop_star261.js >> /scripts/logs/jd_zooShop.log 2>&1
 #家电星推官 活动时间：2021年5月27日 00:00:00-2021年6月18日 23:59:59
 0 0 * * * node /scripts/jd_xtg.js >> /scripts/logs/jd_xtg.log 2>&1
 #家电星推官好友互助 活动时间：2021年5月27日 00:00:00-2021年6月18日 23:59:59
